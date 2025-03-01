@@ -8,6 +8,27 @@ This portfolio showcases projects completed during the Side School's AI for Desi
 
 ## Next Steps
 1. Add project links to each card:
+
+### GitHub Pages Deployment
+1. Create new GitHub repository:
+   - Name it `portfolio` or `yourusername.github.io`
+   - Make it Public
+   - Don't initialize with files
+
+2. Connect and push your local repository:
+   ```bash
+   git remote add origin https://github.com/yourusername/repository-name.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+3. Enable GitHub Pages:
+   - Go to repository Settings
+   - Scroll to "GitHub Pages" section
+   - Select "main" branch as source
+   - Save
+
+4. Add project links to cards:
    ```html
    <div class="expertise-item">
        <a href="YOUR_PROJECT_URL">
