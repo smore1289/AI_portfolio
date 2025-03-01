@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | No-Code Developer & Designer</title>
+    <style>
+        :root {
+            --primary: #2d3436;
+            --secondary: #0984e3;
+            --accent: #00b894;
+            --background: #f5f6fa;
+            --text: #2d3436;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero {
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(120deg, var(--secondary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .expertise {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .expertise-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .expertise-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .expertise-item h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .tagline {
+                font-size: 1.2rem;
+            }
+            .expertise-item {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="hero">
+                <h1>Hi, I'm a Digital Creator</h1>
+                <p class="tagline">Transforming ideas into seamless digital experiences through no-code solutions, AI and stunning design</p>
+               <!-- <a href="#contact" class="cta-button">Let's Create Together</a> -->
+                
+                <div class="expertise">
+                    <div class="expertise-item">
+                        <h3>No-Code Development</h3>
+                        <p>Building powerful web applications without traditional coding, making technology accessible for everyone.</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>Graphic Design</h3>
+                        <p>Creating visually stunning designs that capture attention and communicate your message effectively.</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>Brand Development</h3>
+                        <p>Crafting unique brand identities that resonate with your audience and stand out in the market.</p>
+                    </div>
+                    <div class="expertise-item">
+                        <h3>Automation</h3>
+                        <p>Streamlining workflows and processes to boost efficiency and productivity through smart automation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
